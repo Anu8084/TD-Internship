@@ -1,0 +1,74 @@
+/* Style for the chatbot container */
+.chatbot-container {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 350px;
+  height: 500px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+/* Rest of your existing styles remain the same */
+.chatbot-icon {
+  position: static;
+  bottom: 60px;
+  right: auto;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  height: 30px;
+  width: 30px;  
+  font-size: 12px;
+}
+
+.chatbot-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: move; /* Optional: for potential draggable header */
+}
+
+.chatbot-header span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.close-btn:hover {
+  opacity: 0.8;
+}
+
+
+
+/* Minimized window */
+.chatbot-container.minimized {
+  width: 350px;
+  height: 500px;
+}
+
+/* Maximized window */
+.chatbot-container.maximized {
+  width: 90vw;
+  height: 90vh;
+  bottom: 5vh;
+  right: 5vw;
+}

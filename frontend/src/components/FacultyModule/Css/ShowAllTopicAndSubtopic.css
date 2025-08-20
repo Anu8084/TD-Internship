@@ -1,0 +1,326 @@
+.update-topic-container {
+  padding: 20px;
+}
+
+.page-title {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.subject-info {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.chapters-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.chapter-column {
+  flex: 1;
+  min-width: 300px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chapter-header,
+.topic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-btn {
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-section {
+  display: flex;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.add-input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.topics-list,
+.subtopics-list {
+  list-style: none;
+  padding-left: 15px;
+}
+
+.topic-item,
+.subtopic-item {
+  margin: 8px 0;
+  padding: 8px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.subtopic-name {
+  padding: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.subtopic-name:hover {
+  background: #f0f0f0;
+}
+
+.link-editor {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+  background: #6c757d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.link-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.link-section {
+  flex: 1;
+  min-width: 300px;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.add-link-btn {
+  background: #17a2b8;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.link-item {
+  position: relative;
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.delete-link-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 30%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.submit-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.no-content {
+  color: #6c757d;
+  font-style: italic;
+}
+.edit-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.save-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.topic-name,
+.subtopic-name {
+  flex: 1;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.topic-name:hover,
+.subtopic-name:hover {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+.subtopic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  background: #f1f1f1;
+}
+.subtopic-name {
+  cursor: pointer;
+}
+.subtopics-list button {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  color: #555;
+  border: 1px solid #e0e0e0;
+  padding: 8px 15px 8px 25px;
+  font-size: 0.9rem;
+  width: 100%;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.subtopics-list button:hover {
+  background-color: #e8f5e9;
+  color: #28a745;
+  border-color: #c3e6cb;
+}
+
+.subtopics-list button.active {
+  background-color: #28a745;
+  color: white;
+  border-color: #23923d;
+  font-weight: 500;
+}
+
+/* edit button flex code */
+.chapter-actions {
+  display: flex;
+  gap: 8px;
+}
+.edit-input {
+  flex-grow: 1;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+.edit-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* edit topic flex code */
+.topic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topic-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-input {
+  flex-grow: 1;
+  padding: 4px 8px;
+  font-size: 14px;
+}
+
+/* edit subtopic flex code */
+.subtopic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtopic-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.edit-input {
+  padding: 4px 8px;
+  font-size: 14px;
+}
+/* drag and drop css  */
+/* Add to your CSS file */
+[data-draggable="true"] {
+  position: relative;
+}
+
+[data-draggable="true"]::before {
+  content: '≡';
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #666;
+  cursor: grab;
+}
+
+[data-dragging="true"] {
+  opacity: 0.5;
+  background: #f0f0f0;
+}
